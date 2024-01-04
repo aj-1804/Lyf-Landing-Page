@@ -346,13 +346,13 @@ footer #horizontal-line {
     }
 
     .plan-rate::before {
-        top: 0;
-        right: 0;
+        top: 0.1rem;
+        right: 0.1rem;
     }
 
     #footer-button div::after {
-        top: -0.2rem;
-        left: 0.2rem;
+        top: 0.2;
+        left: 0.1;
     }
 }
 @media (max-width: 56.25em) {
@@ -361,14 +361,14 @@ footer #horizontal-line {
     }
 
     .plan-rate::before {
-        top: -0.3rem;
-        right: -0.3rem;
+        top: 0;
+        right: 0;
     }
 
     #footer-button div::after {
         transform: scale(0.8);
-        top: -0.5rem;
-        left: 0;
+        top: -0.2rem;
+        left: 0.2rem;
     }
 }
 
@@ -382,10 +382,23 @@ footer #horizontal-line {
     }
 
     body {
-        margin: 2.4rem;
+        margin: 1.6rem;
     }
 
     .detail-box {
         flex: 1 1 100%;
+    }
+
+    .plan-rate::before {
+        top: -0.4rem;
+        right: -0.4rem;
+        transform: scale(0.5);
+    }
+
+    #footer-button div::after {
+        transform: scale(0.8);
+        top: -0.5rem;
+        left: 0;
+        transform: scale(0.5);
     }
 }
