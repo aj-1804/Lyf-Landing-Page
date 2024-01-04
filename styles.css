@@ -384,4 +384,8 @@ footer #horizontal-line {
     body {
         margin: 1.6rem;
     }
+
+    .detail-box {
+        flex: 1 1 100%;
+    }
 }
