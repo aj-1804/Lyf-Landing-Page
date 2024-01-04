@@ -1,0 +1,387 @@
+:root {
+    --color-black: #000;
+    --color-light-black-1: rgba(0, 0, 0, 0.2);
+    --color-light-black-2: rgba(0, 0, 0, 0.4);
+    --color-light-black-3: rgba(0, 0, 0, 0.6);
+    --color-light-black-4: rgba(0, 0, 0, 0.8);
+    --color-white: #fff;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-black);
+    margin: 3.2rem 8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-links,
+#nav-logo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#nav-links div :first-child {
+    margin-right: 0.8rem;
+}
+
+#logo {
+    font-family: "lora", "serif";
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+#hamburger-icon {
+    height: 0.25rem;
+    width: 1.6rem;
+    background-color: var(--color-black);
+    position: relative;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+#hamburger-icon::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 1rem;
+    background-color: var(--color-black);
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 4rem;
+    transition: all 0.4s;
+}
+
+.transparent-btn {
+    border: 1px solid var(--color-light-black-2);
+}
+
+.transparent-btn:hover {
+    background-color: #eaeaea;
+}
+
+.black-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid var(--color-black);
+}
+
+.black-btn:hover {
+    background-color: var(--color-light-black-4);
+}
+
+#main-heading {
+    margin: 6vh 0 3.4rem 0;
+    text-align: center;
+}
+
+main h1 {
+    font-weight: 900;
+    line-height: 6rem;
+    font-size: 5rem;
+}
+
+main #heading-para {
+    font-size: 2.1rem;
+    margin: 2rem 0 3rem 0;
+}
+
+#email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+}
+
+#email-signup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    font-weight: 700;
+}
+
+#email-input-field {
+    position: relative;
+}
+
+#email-input-field input {
+    border-radius: 4rem;
+    height: 100%;
+    padding: 0 2rem 0 3.6rem;
+    border: 1px solid var(--color-light-black-4);
+    width: 30rem;
+    height: 4rem;
+}
+
+::placeholder {
+    font-weight: 700;
+    color: black;
+}
+
+label {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.4rem;
+}
+
+label img {
+    width: 1.2rem;
+}
+
+#heading-of-plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+#heading-of-plans h3 a {
+    margin-right: 1.5rem;
+    transition: all 0.2s;
+}
+
+#heading-of-plans h3 a:hover {
+    color: var(--color-light-black-3);
+}
+
+#detail-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.detail-box {
+    flex: 1 0;
+
+    min-width: 28rem;
+    padding: 2.8rem;
+    border-radius: 2rem;
+}
+
+#detail-box-1 {
+    background-color: #5ecca0;
+}
+
+#detail-box-2 {
+    background-color: #0b0b0a;
+    color: rgb(232, 232, 232);
+}
+
+#detail-box-2 .plan-type {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#detail-box-2 div {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#detail-box-3 {
+    background-color: #cb9afb;
+}
+
+#detail-box-4 {
+    background-color: #f9fc91;
+}
+
+.plan-type {
+    color: var(--color-light-black-2);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.plan-name {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.plan-detail {
+    font-size: 1.2rem;
+}
+
+.detail-box div {
+    height: 0.1rem;
+    width: 100%;
+    background-color: var(--color-light-black-1);
+    margin: 2rem 0;
+}
+
+.plan-time {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.plan-rate {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.plan-rate::after {
+    content: "";
+    height: 130%;
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    border-radius: 0.8rem;
+    background-color: var(--color-black);
+    cursor: pointer;
+}
+
+.plan-rate::before {
+    content: url(images/right-arrow-white.png);
+    transform: scale(0.6);
+    position: absolute;
+    top: 0.2rem;
+    right: 0.25rem;
+    color: var(--color-white);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#detail-box-2 .plan-rate::after {
+    background-color: rgb(232, 232, 232);
+    height: 120%;
+}
+
+#detail-box-2 .plan-rate::before {
+    content: url(images/right-arrow-black.png);
+    color: var(--color-black);
+}
+
+footer {
+    margin: 5vh 0;
+}
+
+footer #horizontal-line {
+    height: 0.1rem;
+    width: 100%;
+    background-color: var(--color-light-black-2);
+    margin-bottom: 4.8vh;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#policy-and-story {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#policy-and-story a {
+    transition: all 0.2s;
+}
+
+#policy-and-story a:hover {
+    color: var(--color-light-black-3);
+}
+
+#policy-and-story div {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--color-black);
+    border-radius: 50rem;
+}
+
+#footer-button div {
+    height: 3rem;
+    width: 3.8rem;
+    border-radius: 2rem;
+    border: 2px solid var(--color-black);
+    position: relative;
+}
+
+#footer-button div::after {
+    content: url(images/right-arrow-black.png);
+    position: absolute;
+    top: 0.1rem;
+    left: 0.5rem;
+    transition: all 0.4s;
+}
+
+#footer-button div:hover::after {
+    transform: translateX(3.5rem);
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .plan-rate::before {
+        top: 0;
+        right: 0;
+    }
+
+    #footer-button div::after {
+        top: -0.2rem;
+        left: 0.2rem;
+    }
+}
+@media (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+
+    .plan-rate::before {
+        top: -0.3rem;
+        right: -0.3rem;
+    }
+
+    #footer-button div::after {
+        transform: scale(0.8);
+        top: -0.5rem;
+        left: 0;
+    }
+}
+
+@media (max-width: 37.5em) {
+    html {
+        font-size: 42%;
+    }
+
+    main h1 {
+        font-size: 4rem;
+    }
+
+    body {
+        margin: 1.6rem;
+    }
+}
